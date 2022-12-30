@@ -1,0 +1,18 @@
+.titulo{
+    color: rgb(59, 175, 59);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.nav-link{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;  
+display: flex;
+flex-direction: row;
+gap: 5px;
+}
+.cardwidget{
+    justify-items: center;
+    width: 50px;
+}
