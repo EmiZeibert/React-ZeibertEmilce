@@ -14,5 +14,6 @@ gap: 5px;
 }
 .cardwidget{
     justify-items: center;
-    width: 50px;
+    width: 30px;
+    height: 9px;
 }

@@ -26,7 +26,7 @@ const NavBar = (props) => {
                                 <a className="nav-link" href="#"><button type="button" class="btn btn-outline-success">Categorias</button></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id= "carrito"> <button type="button" class="btn btn-outline-success">Carrito</button> <span><CardWidget cantidad="3" /></span>
+                                <a className="nav-link" id= "carrito"> <button type="button" class="btn btn-outline-success"><span><CardWidget cantidad="3" /></span></button> 
                                 </a>
                                     </li>
                         </ul>
