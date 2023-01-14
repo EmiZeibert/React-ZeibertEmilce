@@ -1,15 +1,30 @@
 import Producto from '../producto/Producto';
+import notebook65000 from "./img/notebook65000.jpg"
+import notebook85000 from "./img/notebook85000.jpg"
+import parlante10500 from "./img/parlante10500.jpg"
+import parlante20000 from "./img/parlante20000.jpg"
+import samsunga03 from "./img/samsunga03.jpg"
+import motorolae20 from "./img/motorolae20.jpg"
+import smart43 from "./img/smart43.jpg"
+import smart32 from "./img/smart32.jpg"
+import auricular2500 from "./img/auricular2500.jpg"
+import auricular5000 from "./img/auricular5000.jpg"
+import tablet45000 from "./img/tablet45000.jpg"
+import tablet54000 from "./img/tablet54000.jpg"
+
+
+
 
 import './ListaProductos.css'
 
 
-const ListaProductos = () => {
+const ListaProductos = (props) => {
 
     const listaDeProductos=[
         {
             id: "notebook-Exo",
             nombre: "Notebook Exo",
-            imagen: "../img/notebook65000.jpg",
+            imagen: notebook65000,
             categoria:"Celulares-notebook",
             precio: 85000,
             stock: 22
@@ -17,7 +32,7 @@ const ListaProductos = () => {
         {
             id: "notebook-Acer",
             nombre: "Notebook Acer",
-            imagen: "../img/notebook85000.jpg",
+            imagen: notebook85000,
             categoria:"Celulares-notebook",
             precio: 65000,
             stock: 20
@@ -25,7 +40,7 @@ const ListaProductos = () => {
         {
             id: "parlante-Chico",
             nombre: "Parlante Chico",
-            imagen: "../img/parlante10500.jpg",
+            imagen: parlante10500,
             categoria:"Audio-video",
             precio: 10500,
             stock: 28
@@ -33,7 +48,7 @@ const ListaProductos = () => {
         {
             id: "parlante-Grande",
             nombre: "Parlante Grande",
-            imagen: "../img/parlante20000.jpg",
+            imagen: parlante20000,
             categoria:"Audio-video",
             precio: 20600,
             stock: 25
@@ -41,7 +56,7 @@ const ListaProductos = () => {
         {
             id: "celular-Samsung A03",
             nombre: "Celular SamsungA03",
-            imagen: "../img/samsunga03.jpg",
+            imagen: samsunga03,
             categoria:"Celulares-notebook",
             precio: 52000,
             stock: 15
@@ -49,7 +64,7 @@ const ListaProductos = () => {
         {
             id: "celular-Motorola-e20",
             nombre: "Celular MotorolaE20",
-            imagen: "../img/motorolae20.jpg",
+            imagen: motorolae20,
             categoria:"Celulares-notebook",
             precio: 34000,
             stock:24
@@ -57,7 +72,7 @@ const ListaProductos = () => {
         {
             id: "smartv-43p",
             nombre: "Smartv 43p",
-            imagen: "../img/smart43.jpg",
+            imagen: smart43,
             categoria:"Audio-video",
             precio: 73000,
             stock:26
@@ -66,7 +81,7 @@ const ListaProductos = () => {
         {
             id: "smartv-32p",
             nombre: "Smartv 32p",
-            imagen: "../img/smart32.jpg",
+            imagen: smart32,
             categoria:"Audio-video",
             precio: 45000,
             stock:23
@@ -74,7 +89,7 @@ const ListaProductos = () => {
         {
             id: "auricular-Newvision",
             nombre: "Auricular Newvision",
-            imagen: "../img/auricular2500.jpg",
+            imagen: auricular2500,
             categoria:"Audio-video",
             precio: 2500,
             stock:12
@@ -82,7 +97,7 @@ const ListaProductos = () => {
         {
             id: "auricular-Redragon",
             nombre: "Auricular Redragon",
-            imagen: "../img/auricular5000.jpg",
+            imagen: auricular5000,
             categoria:"Audio-video",
             precio: 5000,
             stock:11
@@ -90,7 +105,7 @@ const ListaProductos = () => {
         {
             id: "tablet",
             nombre:"Tablet Lenovo",
-            imagen: "../img/tablet45000.jpg",
+            imagen: tablet45000,
             categoria:"Audio-video",
             precio: 45000,
             stock:19
@@ -98,7 +113,7 @@ const ListaProductos = () => {
         {
             id: "tablet-Lenovo",
             nombre: "Tablet Lenovo",
-            imagen: "../img/tablet54000.jpg",
+            imagen: tablet54000,
             categoria:"Audio-video",
             precio: 54000,
             stock:15
@@ -106,17 +121,23 @@ const ListaProductos = () => {
 
     ]
 //quedecon esto//
-    const listaCategoria =listaDeProductos.filter(elementos=>elementos.categoria == props.categoria)
 
-    const ProductosHTML=listaDeProductos.map(elementos => <Producto key={elementos.id} data={elementos}  />)
+let ProductosHTML
+let listaCategoria
+
+if (props.categoria === "Todos los productos"){
+     ProductosHTML=listaDeProductos.map(elementos => <Producto key={elementos.id} data={elementos}  />)
+}else{
+    listaCategoria =listaDeProductos.filter(elementos=>elementos.categoria === props.categoria)
+     ProductosHTML=listaCategoria.map(elementos => <Producto key={elementos.id} data={elementos}  />)
+}
+   
+    
 
 
     return (
-       <div>
-            <p>
-                2.lista
-            </p>
-            {ProductosHTML}
+       <div className='productoscard'>
+                    {ProductosHTML}
             </div>
     )
 
