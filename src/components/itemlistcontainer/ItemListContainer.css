@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans&family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap');
+
+.ItemListcontainercss{
+    display: grid;
+    grid-template-columns: repeat(4, .9fr);
+    margin-top: 10px;
+    gap: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+   }
+   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans&family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap');
+
 .categoria-style {
     display: grid;
     grid-template-columns: 1fr 3fr;

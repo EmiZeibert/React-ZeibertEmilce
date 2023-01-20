@@ -3,14 +3,17 @@ button{
     border-radius: 10px;
       
 }
+.masmenos{
+   display: inline;
+
+
+}
 .contador-boton{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
     gap: 5px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     color: black;
-    
-    
+      
 }

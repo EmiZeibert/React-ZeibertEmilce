@@ -1,5 +1,5 @@
 import './Footer.css'
-import fondo from '../navbar/imagen/fondo.jpg';
+
 
 const Footer = () => {
 

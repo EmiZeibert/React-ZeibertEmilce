@@ -1,10 +1,15 @@
-.titulo{
-    color: rgb(59, 175, 59);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+.titulo {
+    color: rgb(48, 122, 196);
+    border: solid white;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     margin: 0;
 }
+
 .nav-link{
     color: white;
     font-family: Arial, Helvetica, sans-serif;  
@@ -12,8 +17,10 @@ display: flex;
 flex-direction: row;
 gap: 5px;
 }
-.cardwidget{
+
+.cardwidget {
     justify-items: center;
-    width: 30px;
+       width: 30px;
     height: 9px;
+    
 }

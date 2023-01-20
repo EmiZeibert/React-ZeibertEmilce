@@ -1,14 +1,11 @@
 import { useState } from "react"
+import ItemList from '../itemlist/ItemList';
+import Item from '../item/Item';
+import './ItemListContainer.css'
 
-import ListaProductos from '../productos/listaProductos/ListaProductos';
+const ItemListContainer = (props) => {
 
-
-import './Body.css'
-
-
-const Body = () => {
   const [categoriaNombre, setCategoriaNombre] = useState("")
-
 
 
   const cambiarCategoriaAudioVideo = () => {
@@ -29,13 +26,19 @@ const Body = () => {
         <button onClick={cambiarCategoriaTodos}>Todos los productos</button>
         <button onClick={cambiarCategoriaAudioVideo}>Audio-video</button>
         <button onClick={cambiarCategoriaCelularesNotebook}>Celulares-notebook</button>
-        </div>
+      </div>
       <div className="productosc" >
-        <ListaProductos categoria={categoriaNombre}></ListaProductos>
-        </div>
+        <ItemList categoria={categoriaNombre}></ItemList>
+      </div>
     </div>
+
   )
+
 
 }
 
-export default Body;
+
+export default ItemListContainer
+
+
+
