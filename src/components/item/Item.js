@@ -12,7 +12,7 @@ const Item = (props) => {
 
   return (
     <Card className='Card' style={{ width: '15rem' }}>
-    <div><img src={Imagen[id]} /></div>
+    <div><img src={Imagen[id]}/></div>
           <Card.Header as="h5">{nombre}</Card.Header>
           <Card.Body>
               <Card.Title>${precio}</Card.Title>

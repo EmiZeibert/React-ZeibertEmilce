@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
     const { productoId } = useParams()
 
     useEffect(() => {
-        fetch(`../../productos.json/products/${productoId}`)
+        fetch(`./productos.json/products/${productoId}`)
             .then(res => res.json())
             .then(productos => setLista(<ItemDetail key={productos.id} id={"producto" + productos.id} data={productos} />))
     }, [productoId])
@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
     return (
         <section className='detail-css'>
             <Link to="/productos">Volver a mis productos</Link>
-            {lista}
+           {productoId}
         </section>
     )
 

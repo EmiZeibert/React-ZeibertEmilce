@@ -2,19 +2,22 @@ import './ItemDetail.css'
 import Card from 'react-bootstrap/Card';
 import Count from '../productos/contador/Count'
 import ItemListContainer from '../itemlistcontainer/ItemListContainer';
+import Imagen from '../../assets/img/imagenes.js';
 
 const ItemDetail = (props) => {
 
-    const { nombre, categoria, descripcion, precio } = props.data
-  
+    const { nombre, categoria, descripcion, precio, id} = props.data
+
     return (
-        <article className='itemDetail'>
-            <h1>DETALLE DEL PRODUCTO</h1>
-            <Card className='card-separated'>
-                <Card.Header as="h5">{categoria}</Card.Header>
+        <article>
+            <Card className='Card' style={{ width: '15rem' }}>
+                <h1>DETALLE DEL PRODUCTO</h1>
+                <div><img src={Imagen[id]} /></div>
+                <Card.Header as="h5">{nombre}</Card.Header>
                 <Card.Body>
-                    <Card.Title>{nombre}{precio}</Card.Title>
+                    <Card.Title>${precio}</Card.Title>
                     <Card.Text>
+                        {categoria}
                         {descripcion}
                     </Card.Text>
                     <Count stock={10} />
