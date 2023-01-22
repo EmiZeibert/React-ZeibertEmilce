@@ -5,10 +5,8 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 
-const Home = (props) => {
-
-   console.log("Home");
-    
+const Home = () => {
+     
     return(
       <div>   
         <header className='home'>

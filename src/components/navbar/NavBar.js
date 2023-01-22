@@ -18,17 +18,17 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto">
                             <li className="nav-item">
-                                <Link to="/" className="nav-link" aria-current="page" id="categorias-style"><button type="button" class="btn btn-outline-success">Home</button></Link>
+                                <Link to="/" className="nav-link" aria-current="page" id="categoria"><button type="button" className="btn btn-outline-success">Home</button></Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/productos" className="nav-link" id="categorias-style"><button type="button" class="btn btn-outline-success">Productos</button></Link>
+                                <Link to="/productos" className="nav-link" id="categoria"><button type="button" className="btn btn-outline-success">Productos</button></Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/nosotros" className="nav-link" id="categorias-style"><button type="button" class="btn btn-outline-success">Nosotros</button></Link>
+                                <Link to="/nosotros" className="nav-link" id="categoria"><button type="button" className="btn btn-outline-success">Nosotros</button></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="carrito" href='#a'> <button type="button" class="btn btn-outline-success"><span><CardWidget cantidad="3" /></span></button>
-                                </a>
+                                <Link to='#a' className="nav-link" id="carrito" > <button type="button" className="btn btn-outline-success"><CardWidget cantidad="3" /></button>
+                                </Link>
                             </li>
                         </ul>
 

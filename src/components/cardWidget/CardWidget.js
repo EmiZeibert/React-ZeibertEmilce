@@ -3,11 +3,9 @@ import './CardWidget.css'
 const CardWidget = (props) => {
 
     return(
-        
-        <p className= "cardwidget">
-        <p><i className='bi bi-cart4'></i> {props.cantidad}</p>
-        </p>
-        
+               <div className='cart-box'>
+        <p><i className='bi bi-cart4'></i>{props.cantidad}</p>
+     </div>
     )
 
 }

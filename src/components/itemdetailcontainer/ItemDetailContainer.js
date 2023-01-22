@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
     const { productoId } = useParams()
 
     useEffect(() => {
-        fetch(`./productos.json/products/${productoId}`)
+        fetch(`../productos.json${productoId}`)
             .then(res => res.json())
             .then(productos => setLista(<ItemDetail key={productos.id} id={"producto" + productos.id} data={productos} />))
     }, [productoId])

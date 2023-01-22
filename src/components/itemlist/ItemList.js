@@ -8,17 +8,16 @@ const ItemList = (props) => {
     const [lista, setLista] = useState([])
     const { categoriaId } = useParams();
     useEffect(() => {
-        fetch('../../productos.json')
+        fetch('../productos.json')
             .then(res => res.json())
             .then(json => setLista(json.map(productos => <Item key={productos.id} id={"producto" + productos.id} data={productos} />)))
     }, []);
 
-    const listaPorCategoria = lista.filter(productos => productos.id === categoriaId);
+    const categoria = lista.filter(productos => productos.id === categoriaId);
     
     return (
         <div className='productoscard'>
-            {lista}
-            {listaPorCategoria}
+           {lista}
         </div>
 
     );
