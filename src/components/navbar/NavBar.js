@@ -4,11 +4,11 @@ import fondo from './imagen/fondo.jpg';
 import { Link } from 'react-router-dom';
 
 
-const NavBar = (props) => {
+const NavBar = () => {
     return (
         <div>
             <header className="titulo" style={{ backgroundImage: `url(${fondo})` }}>
-                <h1>Electromundo{props.titulo}</h1>
+                <h1>Electromundo</h1>
             </header>
             <nav className="navbar navbar-expand-lg bg-dark">
                 <div className="container-fluid">

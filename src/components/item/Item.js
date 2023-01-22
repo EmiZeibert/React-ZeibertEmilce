@@ -13,7 +13,7 @@ const Item = (props) => {
   return (
     <Card className='Card' style={{ width: '15rem' }}>
     <div><img src={Imagen[id]} /></div>
-                  <Card.Header as="h5">{nombre}</Card.Header>
+          <Card.Header as="h5">{nombre}</Card.Header>
           <Card.Body>
               <Card.Title>${precio}</Card.Title>
               <Card.Text>
@@ -21,7 +21,7 @@ const Item = (props) => {
               </Card.Text>
               <Link to={`/producto/${id}`}> Ver Detalle del Producto </Link>
               <Count stock={10} />
-                        </Card.Body>
+      </Card.Body>
       </Card>
 
 
@@ -30,7 +30,5 @@ const Item = (props) => {
 }
 
 export default Item
-
-
 
 

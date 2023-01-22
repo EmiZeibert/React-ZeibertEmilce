@@ -1,6 +1,5 @@
 import { useState } from "react"
 import ItemList from '../itemlist/ItemList';
-import Item from '../item/Item';
 import './ItemListContainer.css'
 
 const ItemListContainer = (props) => {
@@ -39,6 +38,5 @@ const ItemListContainer = (props) => {
 
 
 export default ItemListContainer
-
 
 
