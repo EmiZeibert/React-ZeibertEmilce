@@ -4,14 +4,13 @@ import './Item.css'
 import { Link } from 'react-router-dom';
 import Imagen from '../../assets/img/imagenes.js';
 
-
-
 const Item = (props) => {
 
-  const { nombre, categoria, precio, id} = props.data
+  const { nombre, categoria, precio, id}=props.data
 
   return (
-    <Card className='Card' style={{ width: '15rem' }}>
+    <div>
+       <Card className='Card' style={{ width: '15rem' }}>
     <div><img src={Imagen[id]}/></div>
           <Card.Header as="h5">{nombre}</Card.Header>
           <Card.Body>
@@ -24,7 +23,7 @@ const Item = (props) => {
       </Card.Body>
       </Card>
 
-
+      </div>
   )
 
 }

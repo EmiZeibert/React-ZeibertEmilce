@@ -1,13 +1,13 @@
 import './ItemDetail.css'
 import Card from 'react-bootstrap/Card';
 import Count from '../productos/contador/Count'
-import ItemListContainer from '../itemlistcontainer/ItemListContainer';
+import ItemList from '../itemlist/ItemList'
 import Imagen from '../../assets/img/imagenes.js';
 
 const ItemDetail = (props) => {
 
-    const { nombre, categoria, descripcion, precio, id} = props.data
-
+    const { nombre, categoria, descripcion, precio, id } = props.data
+       
     return (
         <article>
             <Card className='Card' style={{ width: '15rem' }}>
@@ -23,7 +23,8 @@ const ItemDetail = (props) => {
                     <Count stock={10} />
                 </Card.Body>
             </Card>
-            <ItemListContainer />
+            <ItemList></ItemList>
+
         </article>
     )
 

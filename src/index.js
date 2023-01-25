@@ -13,6 +13,9 @@ import ItemDetailContainer from './components/itemdetailcontainer/ItemDetailCont
 import Nosotros from './components/nosotros/Contactanos';
 import Footer from './components/footer/Footer';
 import reportWebVitals from './reportWebVitals';
+import ItemList from './components/itemlist/ItemList';
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,7 +29,8 @@ root.render(
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/productos' element={<ItemListContainer />} />
-        <Route exact path='/producto/:productoId' element={<ItemDetailContainer />} />
+        <Route exact path='/producto/:productoId' element={<ItemDetailContainer/>} />
+        <Route exact path='/producto/:categoriaId' element={<ItemList/>} />
         <Route exact path='/nosotros' element={<Nosotros />} />
       </Routes>
 
