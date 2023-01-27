@@ -9,6 +9,7 @@ const ItemList = () => {
     const [lista, setLista] = useState([])
 
         const { categoriaId } = useParams();
+        
     useEffect(() => {
         fetch('../data/productos.json')
             .then(res => res.json())

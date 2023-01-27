@@ -1,13 +1,14 @@
 import './ItemDetail.css'
 import Card from 'react-bootstrap/Card';
 import Count from '../productos/contador/Count'
-import ItemList from '../itemlist/ItemList'
 import Imagen from '../../assets/img/imagenes.js';
+import ItemDetailContainer from '../itemdetailcontainer/ItemDetailContainer';
+import { useParams } from 'react-router-dom';
 
 const ItemDetail = (props) => {
 
-    const { nombre, categoria, descripcion, precio, id } = props.data
-       
+    const { nombre, categoria, precio, id } = props.data;
+    const { productoId } = useParams()
     return (
         <article>
             <Card className='Card' style={{ width: '15rem' }}>
@@ -18,12 +19,11 @@ const ItemDetail = (props) => {
                     <Card.Title>${precio}</Card.Title>
                     <Card.Text>
                         {categoria}
-                        {descripcion}
                     </Card.Text>
                     <Count stock={10} />
                 </Card.Body>
+                
             </Card>
-            <ItemList></ItemList>
 
         </article>
     )

@@ -1,6 +1,5 @@
 import "./App.css";
-
-
+import ItemDetailContainer from "./components/itemdetailcontainer/ItemDetailContainer";
 
 
 

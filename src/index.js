@@ -13,7 +13,7 @@ import ItemDetailContainer from './components/itemdetailcontainer/ItemDetailCont
 import Nosotros from './components/nosotros/Contactanos';
 import Footer from './components/footer/Footer';
 import reportWebVitals from './reportWebVitals';
-import ItemList from './components/itemlist/ItemList';
+
 
 
 
@@ -30,7 +30,7 @@ root.render(
         <Route exact path='/' element={<Home />} />
         <Route exact path='/productos' element={<ItemListContainer />} />
         <Route exact path='/producto/:productoId' element={<ItemDetailContainer/>} />
-        <Route exact path='/producto/:categoriaId' element={<ItemList/>} />
+        <Route exact path='/categoria/:categoriaId' element={<ItemListContainer/>} />
         <Route exact path='/nosotros' element={<Nosotros />} />
       </Routes>
 

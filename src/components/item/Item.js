@@ -7,7 +7,7 @@ import Imagen from '../../assets/img/imagenes.js';
 const Item = (props) => {
 
   const { nombre, categoria, precio, id}=props.data
-
+  
   return (
     <div>
        <Card className='Card' style={{ width: '15rem' }}>
