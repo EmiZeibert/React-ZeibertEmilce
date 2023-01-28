@@ -11,7 +11,7 @@ const ItemList = () => {
         const { categoriaId } = useParams();
         
     useEffect(() => {
-        fetch('../data/productos.json')
+        fetch('/data/productos.json')
             .then(res => res.json())
             .then(producto => setLista(producto.map(producto =><Item key={producto.id} data={producto}/>)))
     }, [categoriaId]);

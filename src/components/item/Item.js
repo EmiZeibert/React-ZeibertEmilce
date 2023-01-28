@@ -6,24 +6,24 @@ import Imagen from '../../assets/img/imagenes.js';
 
 const Item = (props) => {
 
-  const { nombre, categoria, precio, id}=props.data
-  
+  const { nombre, categoria, precio, id } = props.data
+
   return (
     <div>
-       <Card className='Card' style={{ width: '15rem' }}>
-    <div><img src={Imagen[id]}/></div>
-          <Card.Header as="h5">{nombre}</Card.Header>
-          <Card.Body>
-              <Card.Title>${precio}</Card.Title>
-              <Card.Text>
-              {categoria}
-              </Card.Text>
-              <Link to={`/producto/${id}`}> Ver Detalle del Producto </Link>
-              <Count stock={10} />
-      </Card.Body>
+      <Card className='Card' style={{ width: '15rem' }}>
+        <div><img src={Imagen[id]} /></div>
+        <Card.Header as="h5">{nombre}</Card.Header>
+        <Card.Body>
+          <Card.Title>${precio}</Card.Title>
+          <Card.Text>
+            {categoria}
+          </Card.Text>
+          <Link to={`/producto/${id}`}> Ver Detalle del Producto </Link>
+          <Count stock={10} />
+        </Card.Body>
       </Card>
 
-      </div>
+    </div>
   )
 
 }
