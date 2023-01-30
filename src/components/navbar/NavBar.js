@@ -16,14 +16,14 @@ const NavBar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav mx-auto">
+                        <ul className="navbar-nav mx-auto">
                             <li className="nav-item">
                                 <Link to="/" className="nav-link" aria-current="page" id="categoria"><button type="button" className="btn btn-outline-success">Home</button></Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/productos" className="nav-link" id="categoria"><button type="button" className="btn btn-outline-success">Productos</button></Link>
                             </li>
-                            <li className="nav-item">
+                                                     <li className="nav-item">
                                 <Link to="/nosotros" className="nav-link" id="categoria"><button type="button" className="btn btn-outline-success">Nosotros</button></Link>
                             </li>
                             <li className="nav-item">

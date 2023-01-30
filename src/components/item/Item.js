@@ -19,8 +19,7 @@ const Item = (props) => {
             {categoria}
           </Card.Text>
           <Link to={`/producto/${id}`}> Ver Detalle del Producto </Link>
-          <Count stock={10} />
-        </Card.Body>
+                </Card.Body>
       </Card>
 
     </div>

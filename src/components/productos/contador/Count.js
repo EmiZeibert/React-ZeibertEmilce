@@ -7,20 +7,19 @@ const Hooks = (props) => {
     const addOne = () => {
         if(contador < props.stock) {
             setContador(contador + 1)
+            props.guardarCantidadAComprar(contador)
         }
     }
 
     const disOne = () => {
         if(contador > 0) {
             setContador(contador - 1)
+            props.guardarCantidadAComprar(contador)
         }
 
     }
 
-    const onAdd = () => {
-        console.log(contador);
-    }
-
+    
 
     return(
         
@@ -30,8 +29,7 @@ const Hooks = (props) => {
             <p className='masmenos'>{contador}</p>
             <button className='masmenos' onClick={disOne}>-</button>
             </div>
-            <button onClick={onAdd}>Add</button>
-        </div>
+                   </div>
         
     )
 
