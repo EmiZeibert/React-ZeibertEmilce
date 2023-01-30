@@ -2,16 +2,16 @@ import Card from 'react-bootstrap/Card';
 import Count from '../../components/productos/contador/Count';
 import './Item.css'
 import { Link } from 'react-router-dom';
-import Imagen from '../../assets/img/imagenes.js';
+
 
 const Item = (props) => {
 
-  const { nombre, categoria, precio, id } = props.data
+  const { nombre, categoria, precio, id, imagen } = props.data
 
   return (
     <div>
       <Card className='Card' style={{ width: '15rem' }}>
-        <div><img src={Imagen[id]} /></div>
+        <div><img src={imagen}/></div>
         <Card.Header as="h5">{nombre}</Card.Header>
         <Card.Body>
           <Card.Title>${precio}</Card.Title>

@@ -1,7 +1,7 @@
 [
   {
     "id":"1",
-    "imagen":"NotebookExo",
+    "imagen":"/assets/img/notebook65000.jpg",
     "nombre":"Notebook Exo",
     "descripcion":"Tamaño de pantalla 14p con resolucion 1366 X 768 hd",
     "categoria":"Celulares y notebook",
@@ -10,7 +10,7 @@
   },
   {
     "id":"2",
-    "imagen":"NotebookAcer",
+    "imagen":"/assets/img/notebook85000.jpg",
     "nombre":"Notebook Acer",
     "descripcion":"Tamaño de pantalla 15,6p con resolucion de 1366 x 768 hd",
     "categoria":"Celulares y notebook",
@@ -19,7 +19,7 @@
   },
   {
     "id":"3",
-    "imagen":"ParlanteChico",
+    "imagen":"/assets/img/parlante10500.jpg",
     "nombre":"Parlante Chico",
     "descripcion":"Conexion inalambrica BT,luces Led de colores,cable de carga USB, entrada para microfono y potencia de 8W de salida",
     "categoria":"Audio y video",
@@ -28,7 +28,7 @@
   },
   {
     "id":"4",
-    "imagen":"ParlanteGrande",
+    "imagen":"/assets/img/parlante20000.jpg",
     "nombre":"Parlante Grande",
     "descripcion":"Conexion inalambrica BT,luces Led de colores,cable de carga USB, entrada para microfono y potencia de 8W de salida",
     "categoria":"Audio y video",
@@ -37,7 +37,7 @@
   },
   {
     "id":"5",
-    "imagen":"CelularSamsungA03",
+    "imagen":"/assets/img/samsunga03.jpg",
     "nombre":"Celular SamsungA03",
     "descripcion":"Pantalla 720x1600 pix, 6.5p, ram de 4 gb, memoria externa micro sd expandible hasta 1 TB y memoria interna 64 gb",
     "categoria":"Celulares y notebook",
@@ -46,7 +46,7 @@
   },
   {
     "id":"6",
-    "imagen":"CelularMotorolaE20",
+    "imagen":"/assets/img/motorolae20.jpg",
     "nombre":"Celular MotorolaE20",
     "descripcion":"Pantalla 720x1600 pix, 6.5p, ram de 4 gb, memoria externa micro sd expandible hasta 1 TB y memoria interna 64 gb",
     "categoria":"Celulares y notebook",
@@ -55,7 +55,7 @@
   },
   {
     "id":"7",
-    "imagen":"Smartv43p",
+    "imagen":"/assets/img/smart43.jpg",
     "nombre":"Smartv 43p",
     "descripcion":"Pantalla LED de 43 pulgadas y resolución 1920x1080p. Optimiza la imagen para ofrecer nitidez, colores ricos y movimientos suaves",
     "categoria":"Audio y video",
@@ -64,7 +64,7 @@
   },
   {
     "id":"8",
-    "imagen":"Smartv32p",
+    "imagen":"/assets/img/smart32.jpg",
     "nombre":"Smartv 32p",
     "descripcion":"Pantalla LED de 32 pulgadas y resolución 1920x1080p. Optimiza la imagen para ofrecer nitidez, colores ricos y movimientos suaves",
     "categoria":"Audio y video",
@@ -73,7 +73,7 @@
   },
   {
     "id":"9",
-    "imagen":"AuricularNewvision",
+    "imagen":"/assets/img/auricular2500.jpg",
     "nombre":"Auricular Newvision",
     "descripcion":"Tienen un diseño súper liviano y cómodo pensado para usarlos durante un largo tiempo, las copas y la vincha están cubiertas con almohadillas que le otorgan una comodidad extra",
     "categoria":"Audio y video",
@@ -82,16 +82,16 @@
   },
   {
     "id": "10",
-    "imagen": "AuricularRedragon",
+    "imagen": "/assets/img/auricular5000.jpg",
     "nombre": "Auricular Redragon",
     "descripcion": "Tienen un diseño súper liviano y cómodo pensado para usarlos durante un largo tiempo, las copas y la vincha están cubiertas con almohadillas que le otorgan una comodidad extra",
     "categoria":"Audio y video",
     "precio":"5000",
-    "stock":11
+    "stock":19
   },
   {
     "id":"11",
-    "imagen":"TabletLenovo",
+    "imagen":"/assets/img/tablet45000.jpg",
     "nombre":"Tablet Lenovo",
     "descripcion":"Tamaño de Pantalla 11p, resolución 2000x1200, memoria internade 64 gb, memoria RAM 4 gb",
     "categoria":"Audio y video",
@@ -100,7 +100,7 @@
   },
   {
     "id":"12",
-    "imagen":"TabletLenovo2",
+    "imagen":"/assets/img/tablet54000.jpg",
     "nombre":"Tablet Lenovo",
     "descripcion":"Tamaño de Pantalla 15p, resolución 2000x1200, memoria internade 64 gb, memoria RAM 4 gb",
     "categoria":"Audio y video",

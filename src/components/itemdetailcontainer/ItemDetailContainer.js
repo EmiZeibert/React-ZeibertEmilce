@@ -18,8 +18,8 @@ const ItemDetailContainer = (props) => {
   return (
 
     <div className='detail-css'>
-      <Link to="/productos">Volver a mis productos</Link>
-<ItemDetail detalle={productoId}/>
+            <ItemDetail key={lista.id} id={"producto" + lista.id} data={lista} />
+            <Link to="/productos">Volver a mis productos</Link>
     </div>
 
 
