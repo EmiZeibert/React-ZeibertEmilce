@@ -4,9 +4,6 @@ import Count from '../productos/contador/Count'
 import { useCartContext } from '../../context/CartContext';
 import { useState } from 'react';
 
-
-
-
 export const ItemDetail = (props) => {
     const { agregarAlCarrito } = useCartContext()
 
@@ -32,20 +29,17 @@ export const ItemDetail = (props) => {
 
             agregarAlCarrito(producto)
         } else {
-            alert("No te olvides de añadir productos")
+            alert("No añadiste productos")
         }
 
     }
-
-
-
     return (
         <article className='card-detail'>
             <Card className='card-d' style={{ width: '25rem' }}>
                 <h2 className='tit'>DETALLE DEL PRODUCTO</h2>
                 <div className='img-d'><img src={imagen} /></div>
-                <Card.Header as="h5">{nombre}</Card.Header>
-                <Card.Body>
+                                <Card.Body>
+                                <Card.Header as="h5">{nombre}</Card.Header>
                     <Card.Title>${precio}</Card.Title>
                     <Card.Text>
                         {categoria}

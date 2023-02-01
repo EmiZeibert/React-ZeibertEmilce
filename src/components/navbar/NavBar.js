@@ -1,8 +1,7 @@
 import './NavBar.css'
 import CardWidget from '../cardWidget/CardWidget';
-import fondo from './imagen/fondo.jpg';
+import fondo from './fondo/fondo.jpg';
 import { Link } from 'react-router-dom';
-
 
 const NavBar = () => {
     return (
@@ -23,11 +22,11 @@ const NavBar = () => {
                             <li className="nav-item">
                                 <Link to="/productos" className="nav-link" id="categoria"><button type="button" className="btn btn-outline-success">Productos</button></Link>
                             </li>
-                                                     <li className="nav-item">
+                            <li className="nav-item">
                                 <Link to="/nosotros" className="nav-link" id="categoria"><button type="button" className="btn btn-outline-success">Nosotros</button></Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='#a' className="nav-link" id="carrito" > <button type="button" className="btn btn-outline-success"><CardWidget cantidad="3" /></button>
+                                <Link to='/carrito' className="nav-link" id="carrito" > <button type="button" className="btn btn-outline-success"><CardWidget cantidad="3" /></button>
                                 </Link>
                             </li>
                         </ul>

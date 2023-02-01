@@ -17,16 +17,12 @@ import Cart from './components/cart/Cart';
 import CartProvider from './context/CartContext';
 
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
     <BrowserRouter >
     |<CartProvider>
-      <NavBar />
-
+      <NavBar/>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/productos' element={<ItemListContainer />} />
@@ -35,12 +31,10 @@ root.render(
         <Route exact path='/nosotros' element={<Nosotros />} />
         <Route exact path='/carrito' element={<Cart/>}/>
       </Routes>
-
-      <Footer />
+      <Footer/>
       </CartProvider>
     </BrowserRouter>
-   
-  </React.StrictMode>
+     </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

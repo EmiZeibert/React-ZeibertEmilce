@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans&family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 button{
     border-radius: 10px;
+    border: solid;
+    
       
 }
 .masmenos{
    display: inline;
-
-
+   width: 35px;
+   
 }
 .contador-boton{
     display: flex;
@@ -14,6 +21,6 @@ button{
     gap: 5px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
-    color: black;
-      
+    color: white;
+
 }

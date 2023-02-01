@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans&family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap');
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .ItemListcontainercss{
     display: grid;
     grid-template-columns: repeat(4, .9fr);
@@ -10,15 +14,12 @@
     color: black;
     text-align: center;
    }
-   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans&family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap');
-
+   
 .categoria-style {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background-color: rgb(61, 24, 66);
-  
-
-}
+    background-color: rgb(135, 111, 184);
+  }
 
 .categoria-1 {
     display: flex;
@@ -31,7 +32,8 @@
     height: 50vh;
 }
 
-button {
+.botonC{
+   height: 45px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: .8rem;
     background-color: rgb(13, 9, 14);
@@ -39,4 +41,5 @@ button {
     color: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border: none;
 }

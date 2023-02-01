@@ -34,9 +34,9 @@ console.log(lista.categoria)
   return (
     <div className="categoria-style">
       <div className="categoria-1">
-        <button onClick={cambiarCategoriaTodos}>Todos los productos</button>
-        <button onClick={cambiarCategoriaAudioVideo}>Audio-video </button>
-        <button onClick={cambiarCategoriaCelularesNotebook}>Celulares-notebook</button>
+        <button className="botonC" onClick={cambiarCategoriaTodos}>Todos los productos</button>
+        <button className="botonC" onClick={cambiarCategoriaAudioVideo}>Audio-video </button>
+        <button  className="botonC"onClick={cambiarCategoriaCelularesNotebook}>Celulares-notebook</button>
       </div>
 
       <div className="productosc" >

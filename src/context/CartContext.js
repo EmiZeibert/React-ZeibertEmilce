@@ -39,13 +39,11 @@ const CartProvider = ({children}) => {
     }
 
     const validarProductoExistente = (id) => {
-
         if(items.find(e=> e.id === id)) {
             return true
         } else {
             return false
         }
-
     }
 
     return(
