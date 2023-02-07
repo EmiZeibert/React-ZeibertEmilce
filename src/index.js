@@ -12,7 +12,6 @@ import ItemDetailContainer from './components/itemdetailcontainer/ItemDetailCont
 import Nosotros from './components/nosotros/Contactanos';
 import Footer from './components/footer/Footer';
 import reportWebVitals from './reportWebVitals';
-import ItemCategoryContainer from './components/itemcategorycontainer/ItemCategoryConteiner';
 import Cart from './components/cart/Cart';
 import CartProvider from './context/CartContext';
 
@@ -27,7 +26,7 @@ root.render(
         <Route exact path='/' element={<Home />} />
         <Route exact path='/productos' element={<ItemListContainer />} />
         <Route exact path='/producto/:productoId' element={<ItemDetailContainer/>} />
-        <Route exact path='/productos/:categoriaId' element={<ItemCategoryContainer/>} />
+        <Route exact path='/productos/:categoriaId' element={<ItemListContainer/>} />
         <Route exact path='/nosotros' element={<Nosotros />} />
         <Route exact path='/carrito' element={<Cart/>}/>
       </Routes>

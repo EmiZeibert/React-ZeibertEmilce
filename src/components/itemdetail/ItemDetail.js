@@ -10,7 +10,7 @@ export const ItemDetail = (props) => {
     const [cantidadDeProductosAComprar, setCantidadDeProductosAComprar] = useState(0)
 
     const { nombre, categoria, descripcion, precio, imagen, id } = props.data
-    
+
     const funcionDelHijoDeGuardarCantidad = (cantidadX) => {
         setCantidadDeProductosAComprar(cantidadX)
     }
@@ -38,8 +38,8 @@ export const ItemDetail = (props) => {
             <Card className='card-d' style={{ width: '25rem' }}>
                 <h2 className='tit'>DETALLE DEL PRODUCTO</h2>
                 <div className='img-d'><img src={imagen} /></div>
-                                <Card.Body>
-                                <Card.Header as="h5">{nombre}</Card.Header>
+                <Card.Body>
+                    <Card.Header as="h5">{nombre}</Card.Header>
                     <Card.Title>${precio}</Card.Title>
                     <Card.Text>
                         {categoria}

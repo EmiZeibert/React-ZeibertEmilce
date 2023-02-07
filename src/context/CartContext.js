@@ -1,17 +1,11 @@
 
 import { useContext, createContext,useState} from "react";
-
 export const CartContext = createContext([])
-
-
 export const useCartContext = () => { return useContext(CartContext)}
 
 
 const CartProvider = ({children}) => {
-
- 
     const [items, setItems] = useState([])
-
    
     console.log(items);
 
@@ -54,3 +48,4 @@ const CartProvider = ({children}) => {
 }
 
 export default CartProvider
+

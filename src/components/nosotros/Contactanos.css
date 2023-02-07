@@ -3,8 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+.ttsucursal {
+    color: rgb(13, 17, 20);
+    font-family: 'Lobster', cursive;
+      font-size: 20px;
+}
+
+body {
     background-color: rgb(135, 111, 184);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
+  
 }
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sucursal {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 100px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.linkredes {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+

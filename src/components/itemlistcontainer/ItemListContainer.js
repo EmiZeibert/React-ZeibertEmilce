@@ -2,55 +2,41 @@ import { useState ,useEffect } from "react"
 import ItemList from '../itemlist/ItemList';
 import './ItemListContainer.css'
 import Item from '../item/Item';
-import { useParams } from 'react-router-dom'
-
+import { useNavigate, useParams } from 'react-router-dom'
 
 const ItemListContainer = (props) => {
 
   const [lista, setLista] = useState([])
   const { categoriaId } = useParams();
+  const navegar= useNavigate()
   useEffect(() => {
-      fetch('/data/productos.json')
+      fetch('../data/productos.json')
           .then(res => res.json())
-          .then(producto => setLista(producto.filter(producto =><Item key={producto.categoria} data={producto}/>)))
+          .then(producto => {
+            if(categoriaId){
+              setLista(producto.filter((item)=> item.categoria === categoriaId))
+            }else{
+              setLista(producto)
+            }
+          })
   }, [categoriaId]);
 
-  const [categoriaNombre, setCategoriaNombre] = useState("")
- 
-
-  const cambiarCategoriaAudioVideo = () => {
-    setCategoriaNombre("Audio y video")
-    
-  }
-  const cambiarCategoriaCelularesNotebook = () => {
-    setCategoriaNombre("Celulares y notebook")
-
-  }
-  const cambiarCategoriaTodos = () => {
-    setCategoriaNombre("All")
-
-  }
-console.log(lista.categoria)
   return (
     <div className="categoria-style">
       <div className="categoria-1">
-        <button className="botonC" onClick={cambiarCategoriaTodos}>Todos los productos</button>
-        <button className="botonC" onClick={cambiarCategoriaAudioVideo}>Audio-video </button>
-        <button  className="botonC"onClick={cambiarCategoriaCelularesNotebook}>Celulares-notebook</button>
+        <button className="botonC" onClick={()=>navegar('/productos')}>Todos los productos</button>
+        <button className="botonC" onClick={()=>navegar('/productos/Audio y video')}>Audio-video </button>
+        <button  className="botonC"onClick={()=>navegar('/productos/Celulares y notebook')}>Celulares-notebook</button>
       </div>
 
       <div className="productosc" >
-      <ItemList key={lista.categoria} id={"producto" + lista.categoria} data={lista} />
-      <ItemList categoria={categoriaNombre}></ItemList>            
+        <ItemList lista={lista} />
       </div>
     </div>
 
   )
 
-
 }
 
-
 export default ItemListContainer
-
 
