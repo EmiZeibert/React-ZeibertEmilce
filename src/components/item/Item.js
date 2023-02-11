@@ -11,8 +11,8 @@ const Item = (props) => {
     <div>
       <Card className='Card' style={{ width: '15rem' }}>
         <div><img src={imagen} /></div>
-                <Card.Body>
-                <Card.Header as="h5">{nombre}</Card.Header>
+        <Card.Body>
+          <Card.Header as="h5">{nombre}</Card.Header>
           <Card.Title>${precio}</Card.Title>
           <Card.Text>
             {categoria}

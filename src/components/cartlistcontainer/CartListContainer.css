@@ -1,6 +1,12 @@
 
-body {
-    background-color: rgb(135, 111, 184) ;
+.tPrincipal {
+    color: rgb(135, 111, 184);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+
 }
 
 .contenedor-carrito>div {
@@ -72,34 +78,4 @@ body {
     cursor: pointer;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-}
-
-.carrito-comprado {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1rem;
-    color: rgb(115, 230, 0);
-}
-
-.disabled {
-    display: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(102, 66, 160);
-}
-
-.boton-info {
-    background-color: transparent;
-    border: none;
-    color: rgb(102, 66, 160);
-    list-style-type: none;
-    text-align: start;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: .7rem;
-    
 }

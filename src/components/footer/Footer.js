@@ -2,13 +2,12 @@ import './Footer.css'
 
 
 const Footer = () => {
+    return (
 
-    return(
-        
         <p className="footer">
-           © Copyright EmiZ
+            © Copyright EmiZ
         </p>
-        
+
     )
 
 }

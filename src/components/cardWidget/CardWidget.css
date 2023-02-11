@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.cart-box{
-display: inline;
+.carrito{
+display: flex;
+flex-direction: row;
+justify-content: center;
 
 }
 .bi-cart4{
     color: white;
-
+   
 }

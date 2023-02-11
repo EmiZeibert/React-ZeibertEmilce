@@ -24,3 +24,9 @@ button{
     color: white;
 
 }
+.contador-agregar{
+        gap: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+}

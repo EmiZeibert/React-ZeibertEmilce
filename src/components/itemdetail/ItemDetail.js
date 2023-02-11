@@ -5,36 +5,20 @@ import { useCartContext } from '../../context/CartContext';
 import { useState } from 'react';
 
 export const ItemDetail = (props) => {
+
     const { agregarAlCarrito } = useCartContext()
 
-    const [cantidadDeProductosAComprar, setCantidadDeProductosAComprar] = useState(0)
+    const [cantidad, setCantidad] = useState(0)
 
-    const { nombre, categoria, descripcion, precio, imagen, id } = props.data
-
-    const funcionDelHijoDeGuardarCantidad = (cantidadX) => {
-        setCantidadDeProductosAComprar(cantidadX)
+    const agregar = (contador) => {
+        agregarAlCarrito(props,contador);
+        setCantidad(contador);
     }
 
+    const { nombre, categoria, descripcion, precio, imagen, stock } = props.data
 
-    const onAdd = () => {
-
-        if (cantidadDeProductosAComprar !== 0) {
-            const producto = {
-                id: id,
-                nombre: nombre,
-                categoria: categoria,
-                precio: precio,
-                count: cantidadDeProductosAComprar,
-            }
-
-            agregarAlCarrito(producto)
-        } else {
-            alert("No añadiste productos")
-        }
-
-    }
     return (
-        <article className='card-detail'>
+        <section className='card-detail'>
             <Card className='card-d' style={{ width: '25rem' }}>
                 <h2 className='tit'>DETALLE DEL PRODUCTO</h2>
                 <div className='img-d'><img src={imagen} /></div>
@@ -45,13 +29,17 @@ export const ItemDetail = (props) => {
                         {categoria}
                         {descripcion}
                     </Card.Text>
-                    <Count stock={10} guardarCantidadAComprar={funcionDelHijoDeGuardarCantidad} />
-                    <button onClick={onAdd} className="btn-buy">On Add</button>
+                    <Count initial={1} stock={stock} agregar={agregar}/>
+                    {
+                        cantidad > 0 &&
+                        <p className='agregado_exitoso'>¡Producto Agregado con Exito!</p>
+                    }
                 </Card.Body>
             </Card>
-        </article>
+        </section>
     )
 
 }
 
 export default ItemDetail
+

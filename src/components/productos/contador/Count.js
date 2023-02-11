@@ -1,20 +1,18 @@
 import { useState } from 'react'
 import './Count.css'
 
-const Hooks = (props) => {
-
-    const [contador, setContador] = useState(0)
+const Count = ({ stock, initial, agregar }) => {
+    const [contador, setContador] = useState(initial)
     const addOne = () => {
-        if (contador < props.stock) {
+        if (contador < stock) {
             setContador(contador + 1)
-            props.guardarCantidadAComprar(contador)
         }
     }
 
     const disOne = () => {
         if (contador > 0) {
             setContador(contador - 1)
-            props.guardarCantidadAComprar(contador)
+
         }
 
     }
@@ -23,9 +21,12 @@ const Hooks = (props) => {
 
         <div className='contador-boton'>
             <div className='contador-boton-children'>
-                <button className='masmenos' onClick={addOne}>+</button>
+                <button className='masmenos' disabled={stock === 0} onClick={addOne}>+</button>
                 <p className='masmenos'>{contador}</p>
-                <button className='masmenos' onClick={disOne}>-</button>
+                <button className='masmenos' disabled={stock === 0} onClick={disOne}>-</button>
+            </div>
+            <div className='contador-agregar'>
+            <button disabled={stock === 0} onClick={()=>agregar(contador)}>Agregar al Carrito</button>
             </div>
         </div>
 
@@ -34,5 +35,4 @@ const Hooks = (props) => {
 }
 
 
-
-export default Hooks;
+export default Count;

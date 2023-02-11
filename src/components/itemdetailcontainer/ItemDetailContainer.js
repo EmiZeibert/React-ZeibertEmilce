@@ -4,7 +4,7 @@ import ItemDetail from '../itemdetail/ItemDetail'
 import './ItemDetailContainer.css'
 
 
-const ItemDetailContainer = (props) => {
+const ItemDetailContainer = () => {
   const [lista, setLista] = useState([])
   const { productoId } = useParams()
 
@@ -18,10 +18,9 @@ const ItemDetailContainer = (props) => {
   return (
 
     <div className='detail-css'>
-            <ItemDetail key={lista.id} id={"producto" + lista.id} data={lista} />
-            <Link to="/productos">Volver a mis productos</Link>
+      <ItemDetail key={lista.id} id={"producto" + lista.id} data={lista} />
+      <Link to="/productos">Volver a mis productos</Link>
     </div>
-
 
   )
 
