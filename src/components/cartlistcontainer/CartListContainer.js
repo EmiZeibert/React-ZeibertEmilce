@@ -6,7 +6,7 @@ import Item from "../item/Item"
 import CartItem from "../cartitem/CartItem"
 
 
-const CartListContainer = ({lista}) => {
+const CartListContainer = () => {
 
     const { items, limpiarCarrito, obtenerTotal } = useContext(CartContext);
 
