@@ -50,6 +50,7 @@ const CartProvider = ({ children }) => {
         items.forEach((e) => total += (e.quantity * e.precio))
         return total
     };
+  
 
     return (
         <CartContext.Provider value={{

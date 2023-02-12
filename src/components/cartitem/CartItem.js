@@ -2,23 +2,31 @@ import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 
 
-const CartItem = () => {
+const CartItem = ({lista}) => {
     const { eliminarProducto } = useContext(CartContext)
-    
-
     return (
-        <div className='contenedor_producto_carrito'>
-            <div className='texto_producto_carrito'>
-                <div className='claves'>
-                    <p className='clave'>Nombre:</p>
-                    <p className='clave'>Precio U.</p>
-                    <p className='clave'>Cantidad</p>
-                    <p className='clave'>Total</p>
+        <div className='contenedor-producto-carrito'>
+            <div className='texto-producto-carrito'>
+                <div className='lista-de-items'>
+                    <ul className='lista-de-items'>
+                        <li>
+                            Nombre:{lista.nombre}
+                        </li>
+                        <li>
+                            Precio:{lista.precio}
+                        </li>
+                        <li>
+                            Cantidad:{lista.quantity}
+                        </li>
+                        <li>
+                            Total:{lista.total}
+                        </li>
+                    </ul>
                 </div>
-
             </div>
             <div className='borrar-producto'>
-                <p onClick={() => eliminarProducto()}><i className='bi bi-trash3'></i></p>
+                <p onClick={() => eliminarProducto(lista.id)}><i className='bi bi-trash3'></i></p>
+
             </div>
         </div>
     )

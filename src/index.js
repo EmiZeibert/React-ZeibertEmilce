@@ -31,7 +31,7 @@ root.render(
         <Route exact path='/nosotros' element={<Nosotros />} />
         <Route exact path='/carrito' element={<CartListContainer/>}/>
         <Route exact path='/comprar' element={<Comprar/>}/>
-      </Routes>
+              </Routes>
       <Footer/>
       </CartProvider>
     </BrowserRouter>

@@ -2,9 +2,9 @@ import React, { useState, useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import './Comprar.css';
 
-const Comprar = () => {
+const Comprar = (props) => {
 
-  const { items, obtenerTotal, vaciarCarrito } = useContext(CartContext);
+  const { items, obtenerTotal} = useContext(CartContext);
 
   return (
 
@@ -18,27 +18,20 @@ const Comprar = () => {
         items.map(item => (
           <div className='productos_resumen'>
             <div>
-              <p>{item.nombre} - {item.precio} <span>x</span> {item.cantidad} </p>
+              <p>{props.nombre} - {props.precio} <span>x</span> {props.cantidad} </p>
             </div>
             <div>
-              <p>${item.precioTotal} </p>
+              <p>${props.precioTotal} </p>
             </div>
           </div>
         ))
       }
       <div className='datos_finales'>
-        <p>Monto final : ${obtenerTotal()}</p>
+        <p>Monto final:${obtenerTotal()}</p>
       </div>
       <div className='carrito-comprado'>
-        <button type='sumbit'>Finalizar Compra</button>
-        {
-          <div className='exito'>
-            <div className='resumen_de_compra'>
-              <h4>¡Compra Exitosa!</h4>
-            </div>
-          </div>
-        }
-      </div>
+        <button className='botonC'>Finalizar Compra</button>
+              </div>
 
     </div>
 

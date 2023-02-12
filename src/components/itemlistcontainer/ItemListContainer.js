@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react"
 import ItemList from '../itemlist/ItemList';
 import './ItemListContainer.css'
-import Item from '../item/Item';
 import { useNavigate, useParams } from 'react-router-dom'
-import CartItem from "../cartitem/CartItem";
+
 
 const ItemListContainer = () => {
 
@@ -31,7 +30,7 @@ const ItemListContainer = () => {
       </div>
       <div className="productosc" >
         <ItemList lista={lista} />
-             </div>
+      </div>
     </div>
 
   )

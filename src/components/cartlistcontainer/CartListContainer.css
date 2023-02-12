@@ -9,7 +9,7 @@
 
 }
 
-.contenedor-carrito>div {
+.contenedor-carrito2>div {
     display: flex;
     flex-direction: column;
     gap: 2rem;

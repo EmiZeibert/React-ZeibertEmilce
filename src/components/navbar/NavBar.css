@@ -27,8 +27,7 @@ bottom: 50px; right: 23%;
 }
 
 .cardwidget {
-    display: inline;
-    justify-items: center;
+        justify-items: center;
     width: 30px;
     height: 9px;
 
