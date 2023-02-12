@@ -1,4 +1,12 @@
-.texto-producto-carrito{
-    color: white;
-display: inline;
+.bi-trash3 {
+    color: red;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(47, 0, 255);
+    list-style: none;
 }

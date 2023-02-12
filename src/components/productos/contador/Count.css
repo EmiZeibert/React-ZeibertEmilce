@@ -1,32 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans&family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-button{
+button {
     border-radius: 10px;
     border: solid;
-    
-      
 }
-.masmenos{
-   display: inline;
-   width: 35px;
-   
-}
-.contador-boton{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1rem;
+.masmenos {
+    display: inline;
+    width: 25px;
+    cursor: pointer;
+    background-color: black;
     color: white;
+    border-radius: 10px;
 
 }
-.contador-agregar{
-        gap: 5px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1rem;
+
+.contador-boton {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    
+}
+
+.contador-agregar {
+        font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8rem;
     color: white;
+
+
+}
+
+.agregar {
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.9rem;
+
+}
+
+.contador-boton-children {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
 }

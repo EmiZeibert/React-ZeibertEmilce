@@ -41,12 +41,12 @@ const CartProvider = ({ children }) => {
     }
 
     const totalProductos = () => {
-        const totalProductos = items.reduce((acc, item) => acc + item.quantity, 0);
+        const totalProductos = items.reduce((acc, item) => acc + item.quantity,0);
         return totalProductos;
     }
 
     const obtenerTotal = () => {
-        let total = 0
+        let total =0
         items.forEach((e) => total += (e.quantity * e.precio))
         return total
     };

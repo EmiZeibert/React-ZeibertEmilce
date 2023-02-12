@@ -26,7 +26,7 @@ const Count = ({ stock, initial, agregar }) => {
                 <button className='masmenos' disabled={stock === 0} onClick={disOne}>-</button>
             </div>
             <div className='contador-agregar'>
-            <button disabled={stock === 0} onClick={()=>agregar(contador)}>Agregar al Carrito</button>
+            <button className='agregar' disabled={stock === 0} onClick={()=>agregar(contador)}>Agregar al Carrito</button>
             </div>
         </div>
 

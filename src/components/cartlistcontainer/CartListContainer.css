@@ -1,45 +1,37 @@
-
 .tPrincipal {
-    color: rgb(135, 111, 184);
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 2rem;
-
+    position: relative;
+    left: 45%;
+    color: rgb(197, 206, 200);
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
 }
 
-.contenedor-carrito2>div {
+.boton-vaciar {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: .7rem;
-
-}
-
-.carrito-productos {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
-    padding-right: 1rem;
-    padding: .5rem;
-    border-radius: 10px;
-}
-
-.carrito-eliminar {
-    color: red;
-    height: 3.5rem;
+    justify-content: flex-end;
 }
 
 .carrito-accion-vaciar {
-    border: 0;
-    padding: 1rem;
     text-transform: uppercase;
     cursor: pointer;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+}
+
+.contenedor-carrito {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.carrito-productos {
+    background-color: black;
+    color: white;
+    padding-right: 1rem;
+    margin-top: 5px;
+    padding-top: 10px;
+    border-radius: 10px;
+
 }
 
 .carrito-vacio {
@@ -49,33 +41,50 @@
 }
 
 .carrito-productos img {
-    width: 6rem;
+    width: 5rem;
     border-radius: 1rem;
 }
 
-.carrito-accion {
+.carrito-productos ul {
     display: flex;
-    justify-content: space-between;
-}
+    flex-direction: row;
+    gap: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(47, 0, 255);
+    list-style: none;
 
-.carrito-accion-der {
-    display: flex;
+
 }
 
 .carrito-accion-total {
     display: flex;
     padding: 1rem;
     text-transform: uppercase;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
     gap: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(47, 0, 255);
 }
 
 .carrito-accion-comprar {
-    border: 0;
-    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+
+
+}
+
+.carrito-comprar {
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+}
+
+.seguir_comprando {
+    text-decoration: none;
 }
