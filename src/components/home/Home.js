@@ -18,7 +18,7 @@ const Home = () => {
               <Link to="/productos">Productos</Link>
             </Card.Text>
           </Card.Body>
-          <Card.Img variant="bottom" src="/assets/img/notebook85000.jpg" />
+          <Card.Img variant="bottom" src="/assets/img/notebook85000.jpg" /> 
         </Card>
         <br />
         <Card>

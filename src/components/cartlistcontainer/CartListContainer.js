@@ -27,7 +27,7 @@ const CartListContainer = () => {
                                 ))
                             }
                             <div className='carrito-accion-total'>
-                                <p>Monto final: ${obtenerTotal()}</p>
+                                <p>Monto final:${obtenerTotal()}</p>
                             </div>
                             <div className='carrito-accion-comprar'>
                                 <Link to="/productos" className='seguir_comprando'>Seguir Comprando</Link>

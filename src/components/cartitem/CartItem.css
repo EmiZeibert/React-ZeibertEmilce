@@ -1,5 +1,7 @@
 .bi-trash3 {
     color: red;
+   
+
 }
 
 .lista-productos {
@@ -9,4 +11,9 @@
     font-size: 1.1rem;
     color: rgb(47, 0, 255);
     list-style: none;
+    
+}
+
+.lista-de-items {
+ width: 100%;
 }

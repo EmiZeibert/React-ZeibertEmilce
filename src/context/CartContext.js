@@ -46,11 +46,11 @@ const CartProvider = ({ children }) => {
     }
 
     const obtenerTotal = () => {
-        let total =0
-        items.forEach((e) => total += (e.quantity * e.precio))
+        let total = 0
+        items.forEach((e) => total += (e.quantity * Number(e.data.precio)))
         return total
     };
-  
+ 
 
     return (
         <CartContext.Provider value={{
