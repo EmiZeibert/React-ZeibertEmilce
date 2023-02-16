@@ -25,7 +25,7 @@ const Comprar = () => {
                         <>
                             <h3 className="carrito-comprado">Para terminar, completá tus datos</h3>
                             <Container className="d-flex flex-row">
-                                <h5>Tenés {totalProductos()} {totalProductos() === 1 ? 'producto' : 'productos'} por un total de $ {obtenerTotal()}</h5>
+                                <h5>Tenés {totalProductos()} {totalProductos() === 1 ? 'producto' : 'productos'} por un total de $ {obtenerTotal(-3000)}</h5>
                             </Container>
                             <Form>
                                 {form.map((m) => {

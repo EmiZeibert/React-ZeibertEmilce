@@ -34,7 +34,7 @@ const Home = () => {
         <Card >
           <Card.Body>
             <Card.Text>
-              Auricular Newvision a solo $2500, súper liviano y cómodo
+              Auricular Redragon a solo $5000, súper liviano y cómodo
               <Link to="/productos">Productos</Link>
             </Card.Text>
           </Card.Body>
