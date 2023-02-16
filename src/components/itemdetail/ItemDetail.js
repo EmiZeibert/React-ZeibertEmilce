@@ -16,7 +16,7 @@ export const ItemDetail = (props) => {
     }
 
     const { nombre, categoria, descripcion, precio, imagen, stock } = props.data
-console.log(props)
+
     return (
         <section className='card-detail'>
             <Card className='card-d' style={{ width: '25rem' }}>

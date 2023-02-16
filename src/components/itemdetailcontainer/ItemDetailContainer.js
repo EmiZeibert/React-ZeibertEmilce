@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
         id:response.id,
         ...response.data()
       }
-        setLista(newDoc);
+          setLista(newDoc);
     }
     getProducto();
   }, [productoId])
@@ -26,7 +26,7 @@ const ItemDetailContainer = () => {
   return (
 
     <div className='detail-css'>
-      <ItemDetail key={lista.id} data={lista} />
+      <ItemDetail key={lista.id} id={"producto" + lista.id} data={lista} />
       <Link to="/productos">Volver a mis productos</Link>
     </div>
 
