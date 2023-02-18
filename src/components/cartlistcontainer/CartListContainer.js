@@ -14,7 +14,7 @@ const CartListContainer = () => {
         <div className='contenedor-carrito'>
             <h3 className='tPrincipal'>Carrito</h3>
            <div className="boton-vaciar">
-            <button className="carrito-accion-vaciar" onClick={limpiarCarrito}>Vaciar Carrito</button>
+            <button className="carrito-accion-vaciar"onClick={limpiarCarrito}>Vaciar Carrito</button>
             </div>
             <div className='carrito-productos'>
                 {
@@ -32,7 +32,6 @@ const CartListContainer = () => {
                             <div className='carrito-accion-comprar'>
                                 <Link to="/productos" className='seguir_comprando'>Seguir Comprando</Link>
                                 <Link to="/comprar"><button className='carrito-comprar'>Continuar la compra</button></Link>
-
                             </div>
                         </div>
                         :

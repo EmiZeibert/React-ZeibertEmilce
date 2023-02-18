@@ -1,6 +1,5 @@
 .carrito-comprado {
-    text-align: center;
-        font-family: 'Nunito Sans', sans-serif;
+           font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     color: white;
     border: 0;
@@ -9,6 +8,11 @@
     cursor: pointer;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    
+}
+.texcomprado{
+    text-align: center;
+    margin-bottom: 50px;
 }
 .flex-row{
     font-family: 'Nunito Sans', sans-serif;
@@ -22,3 +26,4 @@
     border-radius: 1rem;
 
 }
+
