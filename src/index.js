@@ -15,7 +15,6 @@ import reportWebVitals from './reportWebVitals';
 import CartListContainer from './components/cartlistcontainer/CartListContainer';
 import Comprar from './components/comprar/Comprar';
 import CartProvider from './context/CartContext';
-import CompraFinal from './components/comprafinal/CompraFinal';
 
 
 
@@ -33,8 +32,7 @@ root.render(
         <Route exact path='/nosotros' element={<Nosotros />} />
         <Route exact path='/carrito' element={<CartListContainer/>}/>
         <Route exact path='/comprar' element={<Comprar/>}/>
-        <Route exact path='/CompraFinal' element={<CompraFinal/>}/>
-              </Routes>
+                      </Routes>
       <Footer/>
       </CartProvider>
     </BrowserRouter>

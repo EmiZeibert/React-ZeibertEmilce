@@ -1,5 +1,5 @@
-.carrito-comprado {
-           font-family: 'Nunito Sans', sans-serif;
+.carrito-compradocss {
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     color: white;
     border: 0;
@@ -8,18 +8,23 @@
     cursor: pointer;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    
+    display: flex;
+    justify-content: center;
+
 }
-.texcomprado{
+
+.texcomprado {
     text-align: center;
     margin-bottom: 50px;
 }
-.flex-row{
+
+.flex-row {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     color: rgb(18, 22, 14);
 }
-.boton-enviar{
+
+.boton-enviar {
     cursor: pointer;
     background-color: black;
     color: white;
@@ -27,3 +32,30 @@
 
 }
 
+.datos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: rgb(18, 22, 14);
+}
+
+.pedido {
+    display: flex;
+    flex-direction: column;
+       margin-top: 50px;
+       color: white;
+}
+.exito{
+    font-size: 1.2rem;
+ text-align: justify;
+border: solid plum;
+border-radius: 10px;
+padding: 10px;
+   
+}
+h4{
+    color: green;
+}
